@@ -1,0 +1,68 @@
+{
+    //
+    // Go
+    //
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.inferGopath": false,
+    //
+    // File specific settings
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode",
+    },
+    "svelte.enable-ts-plugin": true,
+    // Define the files types for known files.
+    "files.associations": {
+        ".eslintignore": "ignore",
+        ".eslintrc.json": "jsonc",
+        ".prettierrc": "jsonc",
+        ".stylelintrc": "json", // Does not support comments in JSON: https://github.com/stylelint/stylelint/issues/982
+        "babel.config.json": "jsonc", // Does not support $schema
+        "cypress.json": "json", // Does not support comments in JSON: https://github.com/cypress-io/cypress/issues/5218.
+        "jsconfig.json": "jsonc",
+        "tsconfig.json": "jsonc",
+    },
+    // Use the built-in formatter for files like JSON.
+    "editor.formatOnSave": true,
+    // When importing modules, don't use relative paths, use absolute paths.
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    // On save, autofix with ESLint and stylelint.
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true,
+    },
+    // Add newlines to the end of JSON files to align with how package.json behaves when using `npm install`.
+    "[json]": {
+        "files.insertFinalNewline": true,
+    },
+    "[jsonc]": {
+        "files.insertFinalNewline": true,
+    },
+    // Disable the built-in validators.
+    "css.validate": false,
+    "scss.validate": false,
+    "[javascript]": {
+        "editor.formatOnSave": false,
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": false,
+    },
+    "[typescript]": {
+        "editor.formatOnSave": false,
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": false,
+    },
+    // Enable stylelint on just CSS and SCSS.
+    "stylelint.validate": [
+        "css",
+        "scss",
+    ],
+    // Enable ESLint on just JS, JSX, TS, and TSX.
+    "eslint.alwaysShowStatus": true,
+    "eslint.workingDirectories": [
+        {
+            "mode": "auto",
+        },
+    ],
+}
