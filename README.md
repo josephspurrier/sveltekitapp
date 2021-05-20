@@ -55,6 +55,7 @@ Here are a few good resources on SvelteKit:
 
 - [SvelteKit FAQ](https://kit.svelte.dev/faq)
 - [Svelte Integrations](https://github.com/sveltejs/integrations)
+- [Svelte Preprocessor](https://github.com/sveltejs/svelte-preprocess)
 - [SvelteKit Starter Template](https://github.com/navneetsharmaui/sveltekit-starter)
 
 # Additional Documentation
