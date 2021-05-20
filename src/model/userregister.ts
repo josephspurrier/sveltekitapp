@@ -1,4 +1,4 @@
-import { start, finish, text } from '$lib/submit';
+import { start, finish, text } from '~/lib/submit';
 import { MessageType } from '~/type/flash';
 import { showFlash } from '~/store/flash';
 import type { UserRegister, UserRegisterResponse } from '~/type/user';

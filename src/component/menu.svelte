@@ -8,7 +8,7 @@
 		// Close the nav menus when an item is clicked.
 		const links = document.querySelectorAll('a.navbar-item');
 		links.forEach((link) => {
-			link.addEventListener('click', function (elem) {
+			link.addEventListener('click', function () {
 				shownNavClass = '';
 				shownMobileNavClass = '';
 				closeMenu();

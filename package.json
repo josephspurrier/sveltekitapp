@@ -1,6 +1,6 @@
 {
-  "name": "todo",
-  "version": "0.0.1",
+  "name": "svelktekitapp",
+  "version": "1.0.0",
   "scripts": {
     "dev": "svelte-kit dev --port 8080",
     "build": "svelte-kit build",
@@ -48,6 +48,7 @@
     "cookie": "^0.4.1",
     "js-cookie": "^2.2.1",
     "node-sass": "^6.0.0",
-    "salteen": "^1.0.0"
+    "salteen": "^1.0.0",
+    "sass": "^1.32.13"
   }
 }
