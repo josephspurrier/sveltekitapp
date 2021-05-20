@@ -62,14 +62,12 @@
 			<div class="navbar-end">
 				<div id="ddmenu" class={`navbar-item is-hoverable has-dropdown ` + shownNavClass}>
 					<!-- svelte-ignore a11y-missing-attribute -->
-					<a class="navbar-link">{($isLoggedIn && 'Joe') || 'Menu'}</a>
+					<a class="navbar-link">{($isLoggedIn && 'User') || 'Menu'}</a>
 					<div class="navbar-dropdown is-right">
 						{#if !$isLoggedIn}
 							<a class="navbar-item" href="/login"> Login </a>
 						{/if}
-						<a class="navbar-item" href={`https://petstore.swagger.io/?url=/static/swagger.json`}>
-							Swagger
-						</a>
+						<a class="navbar-item" href={`https://petstore.swagger.io`}> Swagger </a>
 
 						<a class="navbar-item" href="/about"> About </a>
 						<hr class="navbar-divider" />
